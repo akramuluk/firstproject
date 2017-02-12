@@ -1,0 +1,248 @@
+
+body{
+    background-color:#efebe9;
+}
+.page-header {
+    background-color: #37474f;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: black;
+    margin-top: 50px;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 10px;
+    margin-left: 100px;
+    text-align: left;
+    color: blue;
+    font-style: initial;
+    font-size: 17px;
+    font-family: inherit;
+
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #424242;
+    margin-left:0px;
+    text-decoration: none;
+
+}
+.comment {
+    margin: 20px 0px 20px 20px;
+    float: right;
+    color: red;
+
+}
+
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+  .menu,
+    .submenu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menu {         
+    margin:15px;
+    width: 100%;
+    width: fit-content; 
+    margin-top: -20px;
+    margin-left:155px;
+
+}
+
+.menu > li {
+    background: #34495e;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}       
+
+.menu li:hover {
+    background: #e74c3c;
+}       
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown level*/
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%; margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;       
+}                       
+
+.submenu > li > a {
+    padding: 1em 2em;           
+}
+
+.submenu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;            
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);         
+}       
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}               
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+    opacity: 0;
+    visibility: hidden;         
+}
+
+.submenu li {
+    transition: .2s ease-out transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}       
+
+.menu > li:hover .submenu li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);           
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);         
+}
+.alltext{
+    width:1000px;
+    box-shadow: 10px 0px 0px grey;
+}
+.introduction{
+    font-size: 16px;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.h2{
+    font-size: 20px;
+    text-align: left;
+    background-color: #263238;
+    padding: 5px;
+    color: white;
+}
+.p{
+    font-size: 16px;
+    text-align: left;
+}
+.fot{
+    font-size: 15px;
+    color: #ffffff;
+    height: 150px;
+    margin: 10px;
+    background-color: #37474f;
+    text-align: center;
+    padding-top: 20px;
+}}
+.images{
+    text-align: left;
+    float: right;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+.blogf{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    margin: 20px;
+}
